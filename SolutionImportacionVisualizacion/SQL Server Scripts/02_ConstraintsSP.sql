@@ -1,4 +1,4 @@
-USE proyecto
+USE proyecto;
 GO
 
 CREATE OR ALTER PROCEDURE importacion.creacionConstraints
