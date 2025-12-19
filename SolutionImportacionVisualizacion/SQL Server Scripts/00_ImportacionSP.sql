@@ -1,7 +1,7 @@
 USE master;
 GO
 
-DROP DATABASE IF EXISTS pruebaTecnica;
+DROP DATABASE IF EXISTS proyecto;
 GO
 
 CREATE DATABASE proyecto;
@@ -187,7 +187,7 @@ BEGIN
 	);
 
 	BULK INSERT importacion.#institucionTemp
-	FROM 'RutaArchivo\institución.csv'
+	FROM 'RutaArchivo\instituciÃ³n.csv'
 	WITH (
 		CODEPAGE = '65001',
 		FIELDTERMINATOR = ',',
