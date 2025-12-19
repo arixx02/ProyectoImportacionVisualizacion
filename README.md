@@ -14,4 +14,6 @@
 <li>Python</li> 
 </ul>
 <p>Antes de realizar las importaciones recomiendo ejecutar el script de python para corregir el archvivo a2_anon y usar el generado en la importación, si no funciona el script hay que instalar las librerias mediante pip install</p>
+## Configuracion de rutas
+Sql Server no acepta rtas relativas en T - SQL asi que en todas las importaciones hay ue actualizar las rutas para el correcto funcionamiento, en el .py de igual manera hay que configurar eso.
 <footer>Los datos son ficticios, generados plenamente para el desarrollo academico del proyecto</footer>
