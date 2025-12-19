@@ -1,19 +1,50 @@
-# Proyecto de importación y visualizacion
-<p>
-  El proyecto contiene una solucion de SQL Server con los scripts enumerados segun orden de ejecución, el pbix que esta adjunto fue generado con import mode y solo hace uso de las vistas generadas en el script 04, despues de ejecutar todos los archivos se puede conectar Power BI a las vistas directamente conectandolo a la BD
-</p>
-<h2>Cosas a mejorar</h2>
-<ul>
-  <li>Hacer uso de indices no cluster para optimizar las consultas en las vistas</li>
-  <li>Hacer uso de login y usuarios para minimizar el ingreso de Power BI a la BD</li>
-</ul>
-<h2>Tecnologias</h2>
-<ul>
-<li>SQL Server Express</li>
-<li>Power BI</li> 
-<li>Python</li> 
-</ul>
-<p>Antes de realizar las importaciones recomiendo ejecutar el script de python para corregir el archvivo a2_anon y usar el generado en la importación, si no funciona el script hay que instalar las librerias mediante pip install</p>
-<h2>Configuracion de rutas</h2>
-SQL Server no acepta rutas relativas en T - SQL asi que en todas las importaciones hay ue actualizar las rutas para el correcto funcionamiento, en el .py de igual manera hay que configurar eso.
-<footer>Los datos son ficticios, generados plenamente para el desarrollo academico del proyecto</footer>
+# Proyecto de Importación y Visualización
+
+Este proyecto permite importar y visualizar datos utilizando **SQL Server** y **Power BI**. Contiene scripts de SQL Server organizados según el orden de ejecución, además de un archivo `.pbix` generado en modo de importación, que se conecta únicamente a las vistas generadas en el script `04`.
+
+Una vez ejecutados todos los scripts, Power BI puede conectarse directamente a las vistas de la base de datos.
+
+---
+
+## Tecnologías Utilizadas
+
+- SQL Server Express  
+- Power BI  
+- Python  
+
+---
+
+## Pasos Recomendados
+
+### 1. Corrección de archivos de origen
+Antes de realizar la importación de datos, se recomienda ejecutar el script de Python para corregir el archivo `a2_anon`. El archivo generado será el que se utilice en la importación.
+
+> **Nota:** Si el script no funciona, instalar las librerías necesarias con:
+>
+> ```bash
+> pip install -r requirements.txt
+> ```
+
+### 2. Ejecución de scripts SQL
+Los scripts están numerados según el orden de ejecución. Se recomienda seguir este orden para asegurar que todas las vistas y tablas se generen correctamente.
+
+### 3. Configuración de rutas
+SQL Server no acepta rutas relativas en T-SQL. Todas las rutas deben actualizarse para asegurar el correcto funcionamiento de las importaciones.  
+En el script de Python también es necesario ajustar las rutas de los archivos de datos.
+
+### 4. Conexión con Power BI
+Una vez ejecutados los scripts, el archivo `.pbix` puede conectarse directamente a las vistas de la base de datos.
+
+---
+
+## Mejoras Sugeridas
+
+- Implementar **índices no cluster** en las vistas para optimizar las consultas.  
+- Configurar **logins y usuarios** para limitar el acceso directo de Power BI a la base de datos.  
+
+---
+
+## Notas
+
+- Los datos son **ficticios**, generados exclusivamente con fines académicos y de desarrollo del proyecto.  
+- Es importante revisar y ajustar las rutas y permisos antes de ejecutar las importaciones.
