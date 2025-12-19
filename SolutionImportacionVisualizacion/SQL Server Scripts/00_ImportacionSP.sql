@@ -4,10 +4,10 @@ GO
 DROP DATABASE IF EXISTS pruebaTecnica;
 GO
 
-CREATE DATABASE pruebaTecnica;
+CREATE DATABASE proyecto;
 GO
 
-USE pruebaTecnica;
+USE proyecto;
 GO
 
 CREATE SCHEMA importacion;

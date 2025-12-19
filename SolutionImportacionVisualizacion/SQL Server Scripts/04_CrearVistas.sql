@@ -1,4 +1,4 @@
-USE pruebaTecnica;
+USE proyecto;
 GO
 
 CREATE SCHEMA vistas;
