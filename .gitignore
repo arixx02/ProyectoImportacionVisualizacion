@@ -1,0 +1,61 @@
+# =========================
+# Visual Studio / VSCode
+# =========================
+.vs/
+**/.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.VC.db
+
+# =========================
+# Build outputs
+# =========================
+bin/
+obj/
+[Bb]uild/
+[Bb]in/
+[Oo]bj/
+
+# =========================
+# SQL Server / LocalDB
+# =========================
+*.mdf
+*.ldf
+*.ndf
+*.log
+
+# =========================
+# NuGet packages
+# =========================
+*.nupkg
+packages/
+*.snupkg
+
+# =========================
+# Rider / ReSharper / JetBrains
+# =========================
+.idea/
+*.sln.iml
+*.DotSettings.user
+_ReSharper*/
+
+# =========================
+# User-specific files
+# =========================
+*.user
+*.userprefs
+*.csproj.user
+*.dbmdl
+*.bak
+*.backup
+
+# =========================
+# Misc temporary
+# =========================
+*.tmp
+*.cache
+*.bak
+*.swp
+*.DS_Store
