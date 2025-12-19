@@ -19,10 +19,10 @@ Una vez ejecutados todos los scripts, Power BI puede conectarse directamente a l
 ### 1. Corrección de archivos de origen
 Antes de realizar la importación de datos, se recomienda ejecutar el script de Python para corregir el archivo `a2_anon`. El archivo generado será el que se utilice en la importación.
 
-> **Nota:** Si el script no funciona, instalar las librerías necesarias con:
+> **Nota:** Si el script no funciona, instalar las librerías necesarias con (desde la raiz del proyecto):
 >
 > ```bash
-> pip install -r requirements.txt
+> pip install -r requerimientos.txt
 > ```
 
 ### 2. Ejecución de scripts SQL
